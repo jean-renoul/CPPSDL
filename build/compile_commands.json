@@ -7,6 +7,18 @@
 },
 {
   "directory": "C:/Users/Jean/CPPSDL/build",
+  "command": "C:\\MinGW\\winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5\\mingw32\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\main.dir\\src\\Game.cpp.obj -c C:\\Users\\Jean\\CPPSDL\\src\\Game.cpp",
+  "file": "C:/Users/Jean/CPPSDL/src/Game.cpp",
+  "output": "CMakeFiles/main.dir/src/Game.cpp.obj"
+},
+{
+  "directory": "C:/Users/Jean/CPPSDL/build",
+  "command": "C:\\MinGW\\winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5\\mingw32\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\main.dir\\src\\Tile.cpp.obj -c C:\\Users\\Jean\\CPPSDL\\src\\Tile.cpp",
+  "file": "C:/Users/Jean/CPPSDL/src/Tile.cpp",
+  "output": "CMakeFiles/main.dir/src/Tile.cpp.obj"
+},
+{
+  "directory": "C:/Users/Jean/CPPSDL/build",
   "command": "C:\\MinGW\\winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5\\mingw32\\bin\\g++.exe  @CMakeFiles/hello_test.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\hello_test.dir\\hello_test.cc.obj -c C:\\Users\\Jean\\CPPSDL\\hello_test.cc",
   "file": "C:/Users/Jean/CPPSDL/hello_test.cc",
   "output": "CMakeFiles/hello_test.dir/hello_test.cc.obj"

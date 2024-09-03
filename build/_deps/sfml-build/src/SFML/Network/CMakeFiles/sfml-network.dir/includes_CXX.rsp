@@ -1,1 +1,1 @@
--I"C:/Users/Jean/CPPSDL/build/_deps/sfml-src/src" -isystem "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/include"
+-IC:/Users/Jean/CPPSDL/src -IC:/Users/Jean/CPPSDL/include -I"C:/Users/Jean/CPPSDL/build/_deps/sfml-src/src" -isystem "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/include"

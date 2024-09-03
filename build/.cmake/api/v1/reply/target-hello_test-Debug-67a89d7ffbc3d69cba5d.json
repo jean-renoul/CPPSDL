@@ -14,7 +14,8 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_link_libraries"
+			"target_link_libraries",
+			"include_directories"
 		],
 		"files" : 
 		[
@@ -29,13 +30,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 40,
+				"line" : 42,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 41,
+				"line" : 43,
 				"parent" : 0
 			},
 			{
@@ -46,6 +47,12 @@
 				"file" : 1,
 				"line" : 161,
 				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
 			}
 		]
 	},
@@ -60,6 +67,14 @@
 			],
 			"includes" : 
 			[
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Jean/CPPSDL/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Jean/CPPSDL/include"
+				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,

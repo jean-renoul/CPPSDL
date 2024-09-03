@@ -17,12 +17,14 @@
 			"target_link_libraries",
 			"target_compile_definitions",
 			"add_definitions",
+			"include_directories",
 			"target_include_directories"
 		],
 		"files" : 
 		[
 			"build/_deps/sfml-src/cmake/Macros.cmake",
-			"build/_deps/sfml-src/src/SFML/Window/CMakeLists.txt"
+			"build/_deps/sfml-src/src/SFML/Window/CMakeLists.txt",
+			"CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -66,19 +68,28 @@
 				"parent" : 0
 			},
 			{
+				"file" : 2
+			},
+			{
 				"command" : 6,
+				"file" : 2,
+				"line" : 10,
+				"parent" : 7
+			},
+			{
+				"command" : 7,
 				"file" : 0,
 				"line" : 204,
 				"parent" : 1
 			},
 			{
-				"command" : 6,
+				"command" : 7,
 				"file" : 1,
 				"line" : 309,
 				"parent" : 0
 			},
 			{
-				"command" : 6,
+				"command" : 7,
 				"file" : 1,
 				"line" : 301,
 				"parent" : 0
@@ -115,20 +126,28 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 7,
-					"path" : "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/src"
+					"backtrace" : 8,
+					"path" : "C:/Users/Jean/CPPSDL/src"
 				},
 				{
 					"backtrace" : 8,
+					"path" : "C:/Users/Jean/CPPSDL/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/src"
+				},
+				{
+					"backtrace" : 10,
 					"path" : "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/extlibs/headers/vulkan"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 9,
 					"isSystem" : true,
 					"path" : "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/include"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 11,
 					"isSystem" : true,
 					"path" : "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/extlibs/headers/glad/include"
 				}

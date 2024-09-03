@@ -23,7 +23,8 @@
 		"files" : 
 		[
 			"build/_deps/googletest-src/googletest/cmake/internal_utils.cmake",
-			"build/_deps/googletest-src/googlemock/CMakeLists.txt"
+			"build/_deps/googletest-src/googlemock/CMakeLists.txt",
+			"CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -67,6 +68,15 @@
 				"parent" : 0
 			},
 			{
+				"file" : 2
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 10,
+				"parent" : 7
+			},
+			{
 				"command" : 6,
 				"file" : 1,
 				"line" : 75,
@@ -95,20 +105,28 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 7,
+					"backtrace" : 8,
+					"path" : "C:/Users/Jean/CPPSDL/src"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/Jean/CPPSDL/include"
+				},
+				{
+					"backtrace" : 9,
 					"path" : "C:/Users/Jean/CPPSDL/build/_deps/googletest-src/googlemock/include"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 9,
 					"path" : "C:/Users/Jean/CPPSDL/build/_deps/googletest-src/googlemock"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 9,
 					"isSystem" : true,
 					"path" : "C:/Users/Jean/CPPSDL/build/_deps/googletest-src/googletest/include"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 9,
 					"isSystem" : true,
 					"path" : "C:/Users/Jean/CPPSDL/build/_deps/googletest-src/googletest"
 				}
@@ -118,7 +136,7 @@
 			{
 				"backtraces" : 
 				[
-					8
+					10
 				],
 				"standard" : "14"
 			},

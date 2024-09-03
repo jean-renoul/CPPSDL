@@ -15,12 +15,14 @@
 			"sfml_add_library",
 			"install",
 			"target_compile_definitions",
+			"include_directories",
 			"target_include_directories"
 		],
 		"files" : 
 		[
 			"build/_deps/sfml-src/cmake/Macros.cmake",
-			"build/_deps/sfml-src/src/SFML/Main/CMakeLists.txt"
+			"build/_deps/sfml-src/src/SFML/Main/CMakeLists.txt",
+			"CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -52,7 +54,16 @@
 				"parent" : 1
 			},
 			{
+				"file" : 2
+			},
+			{
 				"command" : 4,
+				"file" : 2,
+				"line" : 10,
+				"parent" : 5
+			},
+			{
+				"command" : 5,
 				"file" : 0,
 				"line" : 204,
 				"parent" : 1
@@ -81,11 +92,19 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 5,
+					"backtrace" : 6,
+					"path" : "C:/Users/Jean/CPPSDL/src"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/Jean/CPPSDL/include"
+				},
+				{
+					"backtrace" : 7,
 					"path" : "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/include"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 7,
 					"path" : "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/src"
 				}
 			],

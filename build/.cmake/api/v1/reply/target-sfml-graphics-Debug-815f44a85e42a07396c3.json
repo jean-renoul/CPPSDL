@@ -16,12 +16,14 @@
 			"install",
 			"target_link_libraries",
 			"target_compile_definitions",
+			"include_directories",
 			"target_include_directories"
 		],
 		"files" : 
 		[
 			"build/_deps/sfml-src/cmake/Macros.cmake",
-			"build/_deps/sfml-src/src/SFML/Graphics/CMakeLists.txt"
+			"build/_deps/sfml-src/src/SFML/Graphics/CMakeLists.txt",
+			"CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -65,19 +67,28 @@
 				"parent" : 0
 			},
 			{
+				"file" : 2
+			},
+			{
 				"command" : 5,
+				"file" : 2,
+				"line" : 10,
+				"parent" : 7
+			},
+			{
+				"command" : 6,
 				"file" : 0,
 				"line" : 204,
 				"parent" : 1
 			},
 			{
-				"command" : 5,
+				"command" : 6,
 				"file" : 1,
 				"line" : 96,
 				"parent" : 0
 			},
 			{
-				"command" : 5,
+				"command" : 6,
 				"file" : 1,
 				"line" : 99,
 				"parent" : 0
@@ -116,26 +127,34 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 7,
-					"path" : "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/src"
-				},
-				{
-					"backtrace" : 7,
-					"isSystem" : true,
-					"path" : "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/include"
+					"backtrace" : 8,
+					"path" : "C:/Users/Jean/CPPSDL/src"
 				},
 				{
 					"backtrace" : 8,
-					"isSystem" : true,
-					"path" : "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/extlibs/headers/stb_image"
+					"path" : "C:/Users/Jean/CPPSDL/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/src"
 				},
 				{
 					"backtrace" : 9,
 					"isSystem" : true,
-					"path" : "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/extlibs/headers/glad/include"
+					"path" : "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/include"
 				},
 				{
 					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/extlibs/headers/stb_image"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/extlibs/headers/glad/include"
+				},
+				{
+					"backtrace" : 12,
 					"isSystem" : true,
 					"path" : "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/extlibs/headers/freetype2"
 				}
@@ -206,26 +225,34 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 7,
-					"path" : "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/src"
-				},
-				{
-					"backtrace" : 7,
-					"isSystem" : true,
-					"path" : "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/include"
+					"backtrace" : 8,
+					"path" : "C:/Users/Jean/CPPSDL/src"
 				},
 				{
 					"backtrace" : 8,
-					"isSystem" : true,
-					"path" : "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/extlibs/headers/stb_image"
+					"path" : "C:/Users/Jean/CPPSDL/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/src"
 				},
 				{
 					"backtrace" : 9,
 					"isSystem" : true,
-					"path" : "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/extlibs/headers/glad/include"
+					"path" : "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/include"
 				},
 				{
 					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/extlibs/headers/stb_image"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/extlibs/headers/glad/include"
+				},
+				{
+					"backtrace" : 12,
 					"isSystem" : true,
 					"path" : "C:/Users/Jean/CPPSDL/build/_deps/sfml-src/extlibs/headers/freetype2"
 				}

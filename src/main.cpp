@@ -1,4 +1,5 @@
 #include <SFML/Graphics.hpp>
+#include "Game.h"
 
 int main()
 {
@@ -18,4 +19,7 @@ int main()
         window.clear();
         window.display();
     }
+    Game game;
+    game.play();
+    return 0;
 }
