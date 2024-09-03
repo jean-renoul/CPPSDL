@@ -1,34 +1,24 @@
 #ifndef GAME_H
-#define GAME8H
+#define GAME_H
 
-#include "Tile.h"
 #include <vector>
 
 class Game {
-public:   
-    Game();
-    void initialize();
-    void printBoard() const;
-    bool move(char direction);
-    bool isGameOvr() const;
-    void addReandomTile();
-
 private:
-    std::vector<std::vector<Tile>> board;
-    bool gameOver;
+    std::vector<std::vector<int>> grid;  
+    void spawnTile();   
+    bool moveLeft();    
+    bool moveRight();   
+    bool moveUp();      
+    bool moveDown();    
+    bool canMove();     
 
-    void slideleft();
-    void slideRight();
-    void slideUp();
-    void slideDown();
-    void mergeLeft();
-    void mergeRight();
-    void mergeUp();
-    void mergeDown();
-    bool canMove() const;
-    void rotateBoard();
+public:
+    Game();             
+    void play();        
+    void printGrid();   
 };
-#endif // GAME_H
 
+#endif 
 
 

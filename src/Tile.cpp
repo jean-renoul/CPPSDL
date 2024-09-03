@@ -1,13 +1,15 @@
 #include "Tile.h"
 
-Tile::Tile(int value) : value(value) {
-    
-}
+Tile::Tile(int val) : value(val) {}
 
 int Tile::getValue() const {
     return value;
 }
 
-void Tile::setValue(int value) {
-    this->value = value;
+void Tile::setValue(int val) {
+    value = val;
+}
+
+bool Tile::isEmpty() const {
+    return value == 0;
 }
