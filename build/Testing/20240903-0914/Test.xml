@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20240903-0914-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.29.3"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Windows"
+	Hostname="DESKTOP-UA6MHED"
+	OSRelease=" Professional"
+	OSVersion=" (Build 22631)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="15"
+	ModelID="0"
+	ProcessorCacheSize="64"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="22892"
+	TotalPhysicalMemory="14188"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="1996"
+	>
+	<Testing>
+		<StartDateTime>Sep 03 13:42 Paris, Madrid (heure d[NON-UTF-8-BYTE-0x92][NON-UTF-8-BYTE-0xE9]t[NON-UTF-8-BYTE-0xE9])</StartDateTime>
+		<StartTestTime>1725363769</StartTestTime>
+		<TestList>
+			<Test>./HelloTest.BasicAssertions</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>HelloTest.BasicAssertions</Name>
+			<Path>.</Path>
+			<FullName>./HelloTest.BasicAssertions</FullName>
+			<FullCommandLine>C:\Users\Jean\CPPSDL\build\bin\hello_test.exe "--gtest_filter=HelloTest.BasicAssertions" "--gtest_also_run_disabled_tests"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0678002</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>C:\Users\Jean\CPPSDL\build\bin\hello_test.exe "--gtest_filter=HelloTest.BasicAssertions" "--gtest_also_run_disabled_tests"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyNkMFuwjAMhu95Ch/podV2ReLAYAJtE6vacWoqFFpTRUodlLjb669pUQWThvDJjr/4/+2sI9LUQKs0zSI4OdvCai73Hp2Xb6hIrtI0X3/IY6dNLQ81nr1srG0MMnqOvauuSjmUITuEgUlViZ1lnMNmQOCr78BJG0YHC9iiMTY8JS/K62rpe1HWlrwoFlOUkF0sPgMP34PFS+47zZiIIp6ihI2xR2XGPtK3dpZapJ5FjrvzH/h65mRHFJDtdzBEec/liMDn+z0MZk/Q+ugB3ZEEtqxMJB7bilG5uLY/dHuz/24FTlFyq9NvkS7z/HUdlh3ZRPwCEjitVw==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Sep 03 13:42 Paris, Madrid (heure d[NON-UTF-8-BYTE-0x92][NON-UTF-8-BYTE-0xE9]t[NON-UTF-8-BYTE-0xE9])</EndDateTime>
+		<EndTestTime>1725363769</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

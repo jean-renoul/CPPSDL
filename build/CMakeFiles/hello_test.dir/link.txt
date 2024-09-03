@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\hello_test.dir/objects.a
+C:\MinGW\winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5\mingw32\bin\ar.exe qc CMakeFiles\hello_test.dir/objects.a @CMakeFiles\hello_test.dir\objects1.rsp
+C:\MinGW\winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5\mingw32\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\hello_test.dir/objects.a -Wl,--no-whole-archive -o bin\hello_test.exe -Wl,--out-implib,libhello_test.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\hello_test.dir\linkLibs.rsp
