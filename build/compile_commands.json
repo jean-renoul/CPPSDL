@@ -1,9 +1,9 @@
 [
 {
   "directory": "C:/Users/Jean/CPPSDL/build",
-  "command": "C:\\MinGW\\winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5\\mingw32\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\main.dir\\src\\main.cpp.obj -c C:\\Users\\Jean\\CPPSDL\\src\\main.cpp",
-  "file": "C:/Users/Jean/CPPSDL/src/main.cpp",
-  "output": "CMakeFiles/main.dir/src/main.cpp.obj"
+  "command": "C:\\MinGW\\winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5\\mingw32\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\main.dir\\main.cpp.obj -c C:\\Users\\Jean\\CPPSDL\\main.cpp",
+  "file": "C:/Users/Jean/CPPSDL/main.cpp",
+  "output": "CMakeFiles/main.dir/main.cpp.obj"
 },
 {
   "directory": "C:/Users/Jean/CPPSDL/build",
@@ -16,6 +16,18 @@
   "command": "C:\\MinGW\\winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5\\mingw32\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\main.dir\\src\\Tile.cpp.obj -c C:\\Users\\Jean\\CPPSDL\\src\\Tile.cpp",
   "file": "C:/Users/Jean/CPPSDL/src/Tile.cpp",
   "output": "CMakeFiles/main.dir/src/Tile.cpp.obj"
+},
+{
+  "directory": "C:/Users/Jean/CPPSDL/build",
+  "command": "C:\\MinGW\\winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5\\mingw32\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\main.dir\\src\\Window.cpp.obj -c C:\\Users\\Jean\\CPPSDL\\src\\Window.cpp",
+  "file": "C:/Users/Jean/CPPSDL/src/Window.cpp",
+  "output": "CMakeFiles/main.dir/src/Window.cpp.obj"
+},
+{
+  "directory": "C:/Users/Jean/CPPSDL/build",
+  "command": "C:\\MinGW\\winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5\\mingw32\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\main.dir\\src\\GameObject.cpp.obj -c C:\\Users\\Jean\\CPPSDL\\src\\GameObject.cpp",
+  "file": "C:/Users/Jean/CPPSDL/src/GameObject.cpp",
+  "output": "CMakeFiles/main.dir/src/GameObject.cpp.obj"
 },
 {
   "directory": "C:/Users/Jean/CPPSDL/build",

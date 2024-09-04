@@ -2,10 +2,12 @@
 #define GAME_H
 
 #include <vector>
+#include "Window.hpp"
+#include "Tile.h"
 
 class Game {
 private:
-    std::vector<std::vector<int>> grid;  
+    std::vector<std::vector<int>> grid;
     void spawnTile();   
     bool moveLeft();    
     bool moveRight();   
@@ -15,8 +17,11 @@ private:
 
 public:
     Game();             
-    void play();        
-    void printGrid();   
+    void play();
+    void playSFML();        
+    void printGrid();
+    void renderGrid(Window* window);
+
 };
 
 #endif 

@@ -370,6 +370,30 @@ hello_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello_test.dir\build.make CMakeFiles/hello_test.dir/hello_test.cc.s
 .PHONY : hello_test.cc.s
 
+main.obj: main.cpp.obj
+.PHONY : main.obj
+
+# target to build an object file
+main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.obj
+.PHONY : main.cpp.obj
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 src/Game.obj: src/Game.cpp.obj
 .PHONY : src/Game.obj
 
@@ -393,6 +417,30 @@ src/Game.s: src/Game.cpp.s
 src/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
+
+src/GameObject.obj: src/GameObject.cpp.obj
+.PHONY : src/GameObject.obj
+
+# target to build an object file
+src/GameObject.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/GameObject.cpp.obj
+.PHONY : src/GameObject.cpp.obj
+
+src/GameObject.i: src/GameObject.cpp.i
+.PHONY : src/GameObject.i
+
+# target to preprocess a source file
+src/GameObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/GameObject.cpp.i
+.PHONY : src/GameObject.cpp.i
+
+src/GameObject.s: src/GameObject.cpp.s
+.PHONY : src/GameObject.s
+
+# target to generate assembly for a file
+src/GameObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/GameObject.cpp.s
+.PHONY : src/GameObject.cpp.s
 
 src/Tile.obj: src/Tile.cpp.obj
 .PHONY : src/Tile.obj
@@ -418,29 +466,29 @@ src/Tile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Tile.cpp.s
 .PHONY : src/Tile.cpp.s
 
-src/main.obj: src/main.cpp.obj
-.PHONY : src/main.obj
+src/Window.obj: src/Window.cpp.obj
+.PHONY : src/Window.obj
 
 # target to build an object file
-src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.cpp.obj
-.PHONY : src/main.cpp.obj
+src/Window.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Window.cpp.obj
+.PHONY : src/Window.cpp.obj
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+src/Window.i: src/Window.cpp.i
+.PHONY : src/Window.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/Window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Window.cpp.i
+.PHONY : src/Window.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+src/Window.s: src/Window.cpp.s
+.PHONY : src/Window.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/Window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Window.cpp.s
+.PHONY : src/Window.cpp.s
 
 # Help Target
 help:
@@ -472,15 +520,21 @@ help:
 	@echo ... hello_test.obj
 	@echo ... hello_test.i
 	@echo ... hello_test.s
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
 	@echo ... src/Game.obj
 	@echo ... src/Game.i
 	@echo ... src/Game.s
+	@echo ... src/GameObject.obj
+	@echo ... src/GameObject.i
+	@echo ... src/GameObject.s
 	@echo ... src/Tile.obj
 	@echo ... src/Tile.i
 	@echo ... src/Tile.s
-	@echo ... src/main.obj
-	@echo ... src/main.i
-	@echo ... src/main.s
+	@echo ... src/Window.obj
+	@echo ... src/Window.i
+	@echo ... src/Window.s
 .PHONY : help
 
 

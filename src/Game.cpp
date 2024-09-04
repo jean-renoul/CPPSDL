@@ -3,7 +3,6 @@
 #include <cstdlib>
 #include <ctime>
 #include "Game.h"
-#include "Tile.h"
 
 Game::Game() {
     grid = std::vector<std::vector<int>>(4, std::vector<int>(4, 0));
@@ -189,4 +188,40 @@ void Game::play() {
     }
     
     std::cout << "Game Over!" << std::endl;
+}
+
+void Game::renderGrid(Window* window) {
+    window->renderTiles(grid);
+    window->window->display();    
+}
+
+void Game::playSFML() {
+    Window window;
+    window.window->setFramerateLimit(60);
+    
+    while (window.window->isOpen()) {
+        sf::Event event;
+        while (window.window->pollEvent(event)) {
+            if (event.type == sf::Event::Closed) {
+                window.window->close();
+            }
+            if (event.type == sf::Event::KeyPressed) {
+                bool moved;
+                switch (event.key.code) {
+                    case sf::Keyboard::Z: moved = moveUp(); break;
+                    case sf::Keyboard::S: moved = moveDown(); break;
+                    case sf::Keyboard::Q: moved = moveLeft(); break;
+                    case sf::Keyboard::D: moved = moveRight(); break;
+                    default: moved = false;
+                }
+                
+                if (moved) {
+                    spawnTile();
+                }
+            }
+        }
+        
+        window.window->clear();
+        renderGrid(&window);
+    }
 }
