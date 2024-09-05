@@ -296,8 +296,8 @@ CMakeFiles/main.dir/clean:
 # Target rules for target CMakeFiles/hello_test.dir
 
 # All Build rule for target.
-CMakeFiles/hello_test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 CMakeFiles/hello_test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/hello_test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello_test.dir\build.make CMakeFiles/hello_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello_test.dir\build.make CMakeFiles/hello_test.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Jean\CPPSDL\build\CMakeFiles --progress-num=7 "Built target hello_test"

@@ -37,18 +37,16 @@ void Window::renderTiles(std::vector<std::vector<int>> grid) {
 
 void Window::drawTile(Tile* tile) {
     sf::RectangleShape rectangle(sf::Vector2f(tile->getWidth(), tile->getHeight()));
-    sf::Text text;
-    text.setFont(font);
-    text.setString(std::to_string(tile->getValue()));
-    text.setCharacterSize(100);
-    text.setFillColor(sf::Color::Black);
-    text.setPosition((tile->getX() + tile->getWidth() / 2) - text.getLocalBounds().width / 2, (tile->getY() + tile->getHeight() / 4));
+    sf::Text textValue;
+    textValue.setFont(font);
+    textValue.setString(std::to_string(tile->getValue()));
+    textValue.setCharacterSize(100);
+    textValue.setFillColor(sf::Color::Black);
+    textValue.setPosition((tile->getX() + tile->getWidth() / 2) - textValue.getLocalBounds().width / 2, (tile->getY() + tile->getHeight() / 4));
     rectangle.setPosition(tile->getX(), tile->getY());
     rectangle.setFillColor(tile->getColor());
     rectangle.setOutlineColor(sf::Color::White);
     rectangle.setOutlineThickness(5);
     window->draw(rectangle);
-    window->draw(text);
+    window->draw(textValue);
 }
-
-
