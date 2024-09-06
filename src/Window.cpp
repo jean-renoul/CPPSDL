@@ -3,13 +3,14 @@
 #include <filesystem>
 
 Window::Window() {
-    std::cout << "Current working directory: " << std::filesystem::current_path() << std::endl;
     window = new sf::RenderWindow{ { 1920u, 1080u }, "CMake SFML Project" };
     window->setFramerateLimit(144);
     if (!font.loadFromFile("../assets/arial.ttf")) {
         std::cerr << "Error loading font" << std::endl;
     }
     setFont(font);
+    int highScore = Score::readScore("Score.txt");
+    this->highScore = highScore;
 }
 
 Window::~Window() {
@@ -49,4 +50,18 @@ void Window::drawTile(Tile* tile) {
     rectangle.setOutlineThickness(5);
     window->draw(rectangle);
     window->draw(textValue);
+}
+
+void Window::renderScore() {
+    // std::cout << highScore << std::endl;
+    sf::Text text;
+    text.setFont(font);
+    text.setString("Score: " + std::to_string(0));
+    text.setCharacterSize(50);
+    text.setFillColor(sf::Color::White);
+    text.setPosition(1000, 10);
+    window->draw(text);
+    text.setString("High Score: " + std::to_string(highScore));
+    text.setPosition(1000, 60);
+    window->draw(text);
 }

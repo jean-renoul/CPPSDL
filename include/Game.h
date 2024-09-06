@@ -13,15 +13,14 @@ private:
     bool moveRight();   
     bool moveUp();      
     bool moveDown();    
-    bool canMove();     
+    bool canMove();
+    int score; 
 
 public:
     Game();             
     void play();
     void playSFML();        
     void printGrid();
-    void renderGrid(Window* window);
-
 };
 
 #endif 

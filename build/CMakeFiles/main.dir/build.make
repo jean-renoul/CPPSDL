@@ -143,13 +143,29 @@ CMakeFiles/main.dir/src/GameObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/GameObject.cpp.s"
 	C:\MinGW\winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Jean\CPPSDL\src\GameObject.cpp -o CMakeFiles\main.dir\src\GameObject.cpp.s
 
+CMakeFiles/main.dir/src/Score.cpp.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/Score.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
+CMakeFiles/main.dir/src/Score.cpp.obj: C:/Users/Jean/CPPSDL/src/Score.cpp
+CMakeFiles/main.dir/src/Score.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Jean\CPPSDL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/src/Score.cpp.obj"
+	C:\MinGW\winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Score.cpp.obj -MF CMakeFiles\main.dir\src\Score.cpp.obj.d -o CMakeFiles\main.dir\src\Score.cpp.obj -c C:\Users\Jean\CPPSDL\src\Score.cpp
+
+CMakeFiles/main.dir/src/Score.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/Score.cpp.i"
+	C:\MinGW\winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Jean\CPPSDL\src\Score.cpp > CMakeFiles\main.dir\src\Score.cpp.i
+
+CMakeFiles/main.dir/src/Score.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Score.cpp.s"
+	C:\MinGW\winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Jean\CPPSDL\src\Score.cpp -o CMakeFiles\main.dir\src\Score.cpp.s
+
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/main.cpp.obj" \
 "CMakeFiles/main.dir/src/Game.cpp.obj" \
 "CMakeFiles/main.dir/src/Tile.cpp.obj" \
 "CMakeFiles/main.dir/src/Window.cpp.obj" \
-"CMakeFiles/main.dir/src/GameObject.cpp.obj"
+"CMakeFiles/main.dir/src/GameObject.cpp.obj" \
+"CMakeFiles/main.dir/src/Score.cpp.obj"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
@@ -159,6 +175,7 @@ bin/main.exe: CMakeFiles/main.dir/src/Game.cpp.obj
 bin/main.exe: CMakeFiles/main.dir/src/Tile.cpp.obj
 bin/main.exe: CMakeFiles/main.dir/src/Window.cpp.obj
 bin/main.exe: CMakeFiles/main.dir/src/GameObject.cpp.obj
+bin/main.exe: CMakeFiles/main.dir/src/Score.cpp.obj
 bin/main.exe: CMakeFiles/main.dir/build.make
 bin/main.exe: _deps/sfml-build/lib/libsfml-graphics-s-d.a
 bin/main.exe: _deps/sfml-build/lib/libsfml-window-s-d.a
@@ -167,7 +184,7 @@ bin/main.exe: _deps/sfml-src/extlibs/libs-mingw/x86/libfreetype.a
 bin/main.exe: CMakeFiles/main.dir/linkLibs.rsp
 bin/main.exe: CMakeFiles/main.dir/objects1.rsp
 bin/main.exe: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Jean\CPPSDL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable bin\main.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Jean\CPPSDL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable bin\main.exe"
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Copy OpenAL DLL"
 	"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/Jean/CPPSDL/build/_deps/sfml-src/extlibs/bin/x86/openal32.dll C:/Users/Jean/CPPSDL/build/bin
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\main.dir\link.txt --verbose=$(VERBOSE)

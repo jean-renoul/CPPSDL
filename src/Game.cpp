@@ -9,6 +9,7 @@ Game::Game() {
     srand(static_cast<unsigned int>(time(0)));
     spawnTile();
     spawnTile();
+    int score = 0;
 }
 
 void Game::spawnTile() {
@@ -190,11 +191,6 @@ void Game::play() {
     std::cout << "Game Over!" << std::endl;
 }
 
-void Game::renderGrid(Window* window) {
-    window->renderTiles(grid);
-    window->window->display();    
-}
-
 void Game::playSFML() {
     Window window;
     window.window->setFramerateLimit(60);
@@ -222,6 +218,8 @@ void Game::playSFML() {
         }
         
         window.window->clear();
-        renderGrid(&window);
+        window.renderTiles(grid);
+        window.renderScore();
+        window.window->display();
     }
 }

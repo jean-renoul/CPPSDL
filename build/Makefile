@@ -442,6 +442,30 @@ src/GameObject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/GameObject.cpp.s
 .PHONY : src/GameObject.cpp.s
 
+src/Score.obj: src/Score.cpp.obj
+.PHONY : src/Score.obj
+
+# target to build an object file
+src/Score.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Score.cpp.obj
+.PHONY : src/Score.cpp.obj
+
+src/Score.i: src/Score.cpp.i
+.PHONY : src/Score.i
+
+# target to preprocess a source file
+src/Score.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Score.cpp.i
+.PHONY : src/Score.cpp.i
+
+src/Score.s: src/Score.cpp.s
+.PHONY : src/Score.s
+
+# target to generate assembly for a file
+src/Score.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Score.cpp.s
+.PHONY : src/Score.cpp.s
+
 src/Tile.obj: src/Tile.cpp.obj
 .PHONY : src/Tile.obj
 
@@ -529,6 +553,9 @@ help:
 	@echo ... src/GameObject.obj
 	@echo ... src/GameObject.i
 	@echo ... src/GameObject.s
+	@echo ... src/Score.obj
+	@echo ... src/Score.i
+	@echo ... src/Score.s
 	@echo ... src/Tile.obj
 	@echo ... src/Tile.i
 	@echo ... src/Tile.s
