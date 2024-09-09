@@ -209,9 +209,17 @@ void Game::playSFML() {
                 bool moved;
                 switch (event.key.code) {
                     case sf::Keyboard::Z: moved = moveUp(); break;
+                    case sf::Keyboard::Up: moved = moveUp(); break;
+
                     case sf::Keyboard::S: moved = moveDown(); break;
+                    case sf::Keyboard::Down: moved = moveDown(); break;
+                    
                     case sf::Keyboard::Q: moved = moveLeft(); break;
+                    case sf::Keyboard::Left: moved = moveLeft(); break;
+
                     case sf::Keyboard::D: moved = moveRight(); break;
+                    case sf::Keyboard::Right: moved = moveRight(); break;
+
                     default: moved = false;
                 }
                 
@@ -227,6 +235,24 @@ void Game::playSFML() {
         window.window->display();
     }
 
+    bool isKeyPressed = false;
+
+    while (window.window->isOpen() && !isKeyPressed) {
+        sf::Event event;
+        while (window.window->pollEvent(event)) {
+            if (event.type == sf::Event::Closed) {
+                window.window->close();
+            }
+            if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Space) {
+                isKeyPressed = true;
+            }
+        }
+        
+        window.window->clear();
+        window.renderGameOver(score);
+        window.window->display();
+    }
     Score::writeScore(score, "Score.txt");
-    window.renderGameOver();
+    window.window->close();
+
 }
