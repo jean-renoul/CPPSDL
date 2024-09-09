@@ -17,7 +17,8 @@ class Window {
         void closeWindow();
         sf::RenderWindow* window;
         sf::Font font;
-        void renderScore();
+        void renderScore(int currentScore);
+        void renderGameOver();
 
     private:
         int highScore;

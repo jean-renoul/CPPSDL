@@ -9,7 +9,7 @@ Game::Game() {
     srand(static_cast<unsigned int>(time(0)));
     spawnTile();
     spawnTile();
-    int score = 0;
+    this->score = 0;
 }
 
 void Game::spawnTile() {
@@ -51,6 +51,7 @@ bool Game::moveLeft() {
                     moved = true;
                 } else if (grid[i][currentPos] == grid[i][j]) {
                     grid[i][currentPos] *= 2;
+                    score += grid[i][currentPos];
                     grid[i][j] = 0;
                     currentPos++;
                     moved = true;
@@ -80,6 +81,7 @@ bool Game::moveRight() {
                     moved = true;
                 } else if (grid[i][currentPos] == grid[i][j]) {
                     grid[i][currentPos] *= 2;
+                    score += grid[i][currentPos];
                     grid[i][j] = 0;
                     currentPos--;
                     moved = true;
@@ -109,6 +111,7 @@ bool Game::moveUp() {
                     moved = true;
                 } else if (grid[currentPos][j] == grid[i][j]) {
                     grid[currentPos][j] *= 2;
+                    score += grid[currentPos][j];
                     grid[i][j] = 0;
                     currentPos++;
                     moved = true;
@@ -138,6 +141,7 @@ bool Game::moveDown() {
                     moved = true;
                 } else if (grid[currentPos][j] == grid[i][j]) {
                     grid[currentPos][j] *= 2;
+                    score += grid[currentPos][j];
                     grid[i][j] = 0;
                     currentPos--;
                     moved = true;
@@ -195,7 +199,7 @@ void Game::playSFML() {
     Window window;
     window.window->setFramerateLimit(60);
     
-    while (window.window->isOpen()) {
+    while (window.window->isOpen() && canMove()) {
         sf::Event event;
         while (window.window->pollEvent(event)) {
             if (event.type == sf::Event::Closed) {
@@ -219,7 +223,10 @@ void Game::playSFML() {
         
         window.window->clear();
         window.renderTiles(grid);
-        window.renderScore();
+        window.renderScore(score);
         window.window->display();
     }
+
+    Score::writeScore(score, "Score.txt");
+    window.renderGameOver();
 }

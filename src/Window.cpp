@@ -52,11 +52,11 @@ void Window::drawTile(Tile* tile) {
     window->draw(textValue);
 }
 
-void Window::renderScore() {
+void Window::renderScore(int currentScore) {
     // std::cout << highScore << std::endl;
     sf::Text text;
     text.setFont(font);
-    text.setString("Score: " + std::to_string(0));
+    text.setString("Score: " + std::to_string(currentScore));
     text.setCharacterSize(50);
     text.setFillColor(sf::Color::White);
     text.setPosition(1000, 10);
@@ -64,4 +64,18 @@ void Window::renderScore() {
     text.setString("High Score: " + std::to_string(highScore));
     text.setPosition(1000, 60);
     window->draw(text);
+}
+
+void Window::renderGameOver() {
+    window->clear(sf::Color::Black);
+    sf::Text text;
+    text.setFont(font);
+    text.setString("Game Over!");
+    text.setCharacterSize(100);
+    text.setFillColor(sf::Color::White);
+    text.setPosition(500, 500);
+    window->draw(text);
+    window->display();
+    sf::sleep(sf::seconds(2));
+    closeWindow();
 }
