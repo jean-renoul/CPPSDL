@@ -180,9 +180,9 @@ void Game::play() {
         std::cin >> move;
         
         switch (move) {
-            case 'w': moved = moveUp(); break;
+            case 'z': moved = moveUp(); break;
             case 's': moved = moveDown(); break;
-            case 'a': moved = moveLeft(); break;
+            case 'q': moved = moveLeft(); break;
             case 'd': moved = moveRight(); break;
             default: moved = false;
         }
