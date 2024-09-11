@@ -2,9 +2,9 @@
 #include <vector>
 #include <cstdlib>
 #include <ctime>
-#include "Game.h"
+#include "GameSFML.hpp"
 
-Game::Game() {
+GameSFML::GameSFML() : Game() {
     grid = std::vector<std::vector<int>>(4, std::vector<int>(4, 0));
     srand(static_cast<unsigned int>(time(0)));
     spawnTile();
@@ -12,34 +12,7 @@ Game::Game() {
     this->score = 0;
 }
 
-void Game::spawnTile() {
-    std::vector<std::pair<int, int>> emptyTiles;
-    
-    for (int i = 0; i < 4; ++i) {
-        for (int j = 0; j < 4; ++j) {
-            if (grid[i][j] == 0) {
-                emptyTiles.push_back({i, j});
-            }
-        }
-    }
-
-    if (!emptyTiles.empty()) {
-        int randIndex = rand() % emptyTiles.size();
-        int randValue = (rand() % 2 + 1) * 2; // 2 or 4
-        grid[emptyTiles[randIndex].first][emptyTiles[randIndex].second] = randValue;
-    }
-}
-
-void Game::printGrid() {
-    for (int i = 0; i < 4; ++i) {
-        for (int j = 0; j < 4; ++j) {
-            std::cout << grid[i][j] << "\t";
-        }
-        std::cout << std::endl;
-    }
-}
-
-bool Game::moveLeft() {
+bool GameSFML::moveLeft() {
     bool moved = false;
     for (int i = 0; i < 4; ++i) {
         int currentPos = 0;
@@ -69,7 +42,7 @@ bool Game::moveLeft() {
     return moved;
 }
 
-bool Game::moveRight() {
+bool GameSFML::moveRight() {
     bool moved = false;
     for (int i = 0; i < 4; ++i) {
         int currentPos = 3;
@@ -99,7 +72,7 @@ bool Game::moveRight() {
     return moved;
 }
 
-bool Game::moveUp() {
+bool GameSFML::moveUp() {
     bool moved = false;
     for (int j = 0; j < 4; ++j) {
         int currentPos = 0;
@@ -129,7 +102,7 @@ bool Game::moveUp() {
     return moved;
 }
 
-bool Game::moveDown() {
+bool GameSFML::moveDown() {
     bool moved = false;
     for (int j = 0; j < 4; ++j) {
         int currentPos = 3;
@@ -159,38 +132,64 @@ bool Game::moveDown() {
     return moved;
 }
 
-bool Game::canMove() {
-    for (int i = 0; i < 4; ++i) {
-        for (int j = 0; j < 4; ++j) {
-            if (grid[i][j] == 0) return true;
-            if (j < 3 && grid[i][j] == grid[i][j + 1]) return true;
-            if (i < 3 && grid[i][j] == grid[i + 1][j]) return true;
-        }
-    }
-    return false;
-}
+void GameSFML::play() {
+    Window window;
+    window.window->setFramerateLimit(60);
+    
+    while (window.window->isOpen() && canMove()) {
+        sf::Event event;
+        while (window.window->pollEvent(event)) {
+            if (event.type == sf::Event::Closed) {
+                window.window->close();
+            }
+            if (event.type == sf::Event::KeyPressed) {
+                bool moved;
+                switch (event.key.code) {
+                    case sf::Keyboard::Z: moved = moveUp(); break;
+                    case sf::Keyboard::Up: moved = moveUp(); break;
 
-void Game::play() {
-    char move;
-    bool moved;
-    
-    while (canMove()) {
-        printGrid();
-        std::cout << "Enter move (w: up, s: down, a: left, d: right): ";
-        std::cin >> move;
-        
-        switch (move) {
-            case 'z': moved = moveUp(); break;
-            case 's': moved = moveDown(); break;
-            case 'q': moved = moveLeft(); break;
-            case 'd': moved = moveRight(); break;
-            default: moved = false;
+                    case sf::Keyboard::S: moved = moveDown(); break;
+                    case sf::Keyboard::Down: moved = moveDown(); break;
+                    
+                    case sf::Keyboard::Q: moved = moveLeft(); break;
+                    case sf::Keyboard::Left: moved = moveLeft(); break;
+
+                    case sf::Keyboard::D: moved = moveRight(); break;
+                    case sf::Keyboard::Right: moved = moveRight(); break;
+
+                    default: moved = false;
+                }
+                
+                if (moved) {
+                    spawnTile();
+                }
+            }
         }
         
-        if (moved) {
-            spawnTile();
-        }
+        window.window->clear();
+        window.renderTiles(grid);
+        window.renderScore(score);
+        window.window->display();
     }
-    
-    std::cout << "Game Over!" << std::endl;
+
+    bool isKeyPressed = false;
+
+    while (window.window->isOpen() && !isKeyPressed) {
+        sf::Event event;
+        while (window.window->pollEvent(event)) {
+            if (event.type == sf::Event::Closed) {
+                window.window->close();
+            }
+            if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Space) {
+                isKeyPressed = true;
+            }
+        }
+        
+        window.window->clear();
+        window.renderGameOver(score);
+        window.window->display();
+    }
+    Score::writeScore(score, "Score.txt");
+    window.window->close();
+
 }

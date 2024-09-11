@@ -6,20 +6,19 @@
 #include "Tile.h"
 
 class Game {
-private:
+protected:
     std::vector<std::vector<int>> grid;
     void spawnTile();   
-    bool moveLeft();    
-    bool moveRight();   
-    bool moveUp();      
-    bool moveDown();    
+    virtual bool moveLeft();    
+    virtual bool moveRight();   
+    virtual bool moveUp();      
+    virtual bool moveDown();    
     bool canMove();
     int score; 
 
 public:
     Game();             
-    void play();
-    void playSFML();        
+    virtual void play();        
     void printGrid();
 };
 
