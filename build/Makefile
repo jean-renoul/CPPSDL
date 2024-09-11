@@ -394,6 +394,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Animation.obj: src/Animation.cpp.obj
+.PHONY : src/Animation.obj
+
+# target to build an object file
+src/Animation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Animation.cpp.obj
+.PHONY : src/Animation.cpp.obj
+
+src/Animation.i: src/Animation.cpp.i
+.PHONY : src/Animation.i
+
+# target to preprocess a source file
+src/Animation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Animation.cpp.i
+.PHONY : src/Animation.cpp.i
+
+src/Animation.s: src/Animation.cpp.s
+.PHONY : src/Animation.s
+
+# target to generate assembly for a file
+src/Animation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Animation.cpp.s
+.PHONY : src/Animation.cpp.s
+
 src/Game.obj: src/Game.cpp.obj
 .PHONY : src/Game.obj
 
@@ -441,6 +465,30 @@ src/GameObject.s: src/GameObject.cpp.s
 src/GameObject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/GameObject.cpp.s
 .PHONY : src/GameObject.cpp.s
+
+src/GameSFML.obj: src/GameSFML.cpp.obj
+.PHONY : src/GameSFML.obj
+
+# target to build an object file
+src/GameSFML.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/GameSFML.cpp.obj
+.PHONY : src/GameSFML.cpp.obj
+
+src/GameSFML.i: src/GameSFML.cpp.i
+.PHONY : src/GameSFML.i
+
+# target to preprocess a source file
+src/GameSFML.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/GameSFML.cpp.i
+.PHONY : src/GameSFML.cpp.i
+
+src/GameSFML.s: src/GameSFML.cpp.s
+.PHONY : src/GameSFML.s
+
+# target to generate assembly for a file
+src/GameSFML.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/GameSFML.cpp.s
+.PHONY : src/GameSFML.cpp.s
 
 src/Score.obj: src/Score.cpp.obj
 .PHONY : src/Score.obj
@@ -547,12 +595,18 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/Animation.obj
+	@echo ... src/Animation.i
+	@echo ... src/Animation.s
 	@echo ... src/Game.obj
 	@echo ... src/Game.i
 	@echo ... src/Game.s
 	@echo ... src/GameObject.obj
 	@echo ... src/GameObject.i
 	@echo ... src/GameObject.s
+	@echo ... src/GameSFML.obj
+	@echo ... src/GameSFML.i
+	@echo ... src/GameSFML.s
 	@echo ... src/Score.obj
 	@echo ... src/Score.i
 	@echo ... src/Score.s

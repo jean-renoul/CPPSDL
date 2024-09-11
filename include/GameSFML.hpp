@@ -5,7 +5,6 @@
 #include "Window.hpp"
 #include "Tile.h"
 #include "Game.h"
-#include "Animation.hpp"
 
 class GameSFML : public Game {
     private:
@@ -13,6 +12,7 @@ class GameSFML : public Game {
         bool moveRight() override;
         bool moveUp() override;
         bool moveDown() override;
+        std::vector<Animation> animations;
 
     public:
         GameSFML();

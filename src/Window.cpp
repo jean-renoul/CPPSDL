@@ -74,3 +74,9 @@ void Window::renderGameOver(int currentScore) {
     text.setPosition(500, 500);
     window->draw(text);
 }
+
+void Window::renderAnimations(std::vector<Animation> animations) {
+    for (int i = 0; i < animations.size(); i++) {
+        window->draw(animations[i].getTileShape());
+    }
+}

@@ -4,6 +4,7 @@
 #include <SFML/Graphics.hpp>
 #include "Tile.h"
 #include "Score.hpp"
+#include "Animation.hpp"
 
 
 
@@ -19,6 +20,7 @@ class Window {
         sf::Font font;
         void renderScore(int currentScore);
         void renderGameOver(int currentScore);
+        void renderAnimations(std::vector<Animation> animations);
 
     private:
         int highScore;

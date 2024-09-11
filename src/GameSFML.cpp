@@ -14,26 +14,43 @@ GameSFML::GameSFML() : Game() {
 
 bool GameSFML::moveLeft() {
     bool moved = false;
+    int tileSize = 200;
+
     for (int i = 0; i < 4; ++i) {
         int currentPos = 0;
         for (int j = 1; j < 4; ++j) {
             if (grid[i][j] != 0) {
+                sf::Vector2f startPos(j * tileSize, i * tileSize);
+                sf::Vector2f endPos(currentPos * tileSize, i * tileSize);
+
                 if (grid[i][currentPos] == 0) {
                     grid[i][currentPos] = grid[i][j];
                     grid[i][j] = 0;
                     moved = true;
+                    if (startPos != endPos) {
+                        animations.push_back(Animation(startPos, endPos, 0.2f));
+                    }
+
                 } else if (grid[i][currentPos] == grid[i][j]) {
                     grid[i][currentPos] *= 2;
                     score += grid[i][currentPos];
                     grid[i][j] = 0;
                     currentPos++;
                     moved = true;
+                    if (startPos != endPos) {
+                        animations.push_back(Animation(startPos, endPos, 0.2f));
+                    }
+
                 } else {
                     currentPos++;
                     if (currentPos != j) {
+                        sf::Vector2f newEndPos(currentPos * tileSize, i * tileSize);
                         grid[i][currentPos] = grid[i][j];
                         grid[i][j] = 0;
                         moved = true;
+                        if (startPos != endPos) {
+                            animations.push_back(Animation(startPos, endPos, 0.2f));
+                        }
                     }
                 }
             }
@@ -44,26 +61,43 @@ bool GameSFML::moveLeft() {
 
 bool GameSFML::moveRight() {
     bool moved = false;
+    int tileSize = 200; // Assuming each tile is 200x200 pixels
+
     for (int i = 0; i < 4; ++i) {
         int currentPos = 3;
         for (int j = 2; j >= 0; --j) {
             if (grid[i][j] != 0) {
+                sf::Vector2f startPos(j * tileSize, i * tileSize);
+                sf::Vector2f endPos(currentPos * tileSize, i * tileSize);
+
                 if (grid[i][currentPos] == 0) {
                     grid[i][currentPos] = grid[i][j];
                     grid[i][j] = 0;
                     moved = true;
+                    if (startPos != endPos) {
+                        animations.push_back(Animation(startPos, endPos, 0.2f));
+                    }
+
                 } else if (grid[i][currentPos] == grid[i][j]) {
                     grid[i][currentPos] *= 2;
                     score += grid[i][currentPos];
                     grid[i][j] = 0;
                     currentPos--;
                     moved = true;
+                    if (startPos != endPos) {
+                        animations.push_back(Animation(startPos, endPos, 0.2f));
+                    }
+
                 } else {
                     currentPos--;
                     if (currentPos != j) {
+                        sf::Vector2f newEndPos(currentPos * tileSize, i * tileSize);
                         grid[i][currentPos] = grid[i][j];
                         grid[i][j] = 0;
                         moved = true;
+                        if (startPos != endPos) {
+                            animations.push_back(Animation(startPos, endPos, 0.2f));
+                        }
                     }
                 }
             }
@@ -74,26 +108,44 @@ bool GameSFML::moveRight() {
 
 bool GameSFML::moveUp() {
     bool moved = false;
+    int tileSize = 200; // Assuming each tile is 200x200 pixels
+
     for (int j = 0; j < 4; ++j) {
         int currentPos = 0;
         for (int i = 1; i < 4; ++i) {
             if (grid[i][j] != 0) {
+                sf::Vector2f startPos(j * tileSize, i * tileSize);
+                sf::Vector2f endPos(j * tileSize, currentPos * tileSize);
+
+
                 if (grid[currentPos][j] == 0) {
                     grid[currentPos][j] = grid[i][j];
                     grid[i][j] = 0;
                     moved = true;
+                    if (startPos != endPos) {
+                        animations.push_back(Animation(startPos, endPos, 0.2f));
+                    }
+
                 } else if (grid[currentPos][j] == grid[i][j]) {
                     grid[currentPos][j] *= 2;
                     score += grid[currentPos][j];
                     grid[i][j] = 0;
                     currentPos++;
                     moved = true;
+                    if (startPos != endPos) {
+                        animations.push_back(Animation(startPos, endPos, 0.2f));
+                    }
+
                 } else {
                     currentPos++;
                     if (currentPos != i) {
+                        sf::Vector2f newEndPos(j * tileSize, currentPos * tileSize);
                         grid[currentPos][j] = grid[i][j];
                         grid[i][j] = 0;
                         moved = true;
+                        if (startPos != endPos) {
+                            animations.push_back(Animation(startPos, endPos, 0.2f));
+                        }
                     }
                 }
             }
@@ -104,26 +156,43 @@ bool GameSFML::moveUp() {
 
 bool GameSFML::moveDown() {
     bool moved = false;
+    int tileSize = 200; // Assuming each tile is 200x200 pixels
+
     for (int j = 0; j < 4; ++j) {
         int currentPos = 3;
         for (int i = 2; i >= 0; --i) {
             if (grid[i][j] != 0) {
+                sf::Vector2f startPos(j * tileSize, i * tileSize);
+                sf::Vector2f endPos(j * tileSize, currentPos * tileSize);
+
                 if (grid[currentPos][j] == 0) {
                     grid[currentPos][j] = grid[i][j];
                     grid[i][j] = 0;
                     moved = true;
+                    if (startPos != endPos) {
+                        animations.push_back(Animation(startPos, endPos, 0.2f));
+                    }
+
                 } else if (grid[currentPos][j] == grid[i][j]) {
                     grid[currentPos][j] *= 2;
                     score += grid[currentPos][j];
                     grid[i][j] = 0;
                     currentPos--;
                     moved = true;
+                    if (startPos != endPos) {
+                        animations.push_back(Animation(startPos, endPos, 0.2f));
+                    }
+
                 } else {
                     currentPos--;
                     if (currentPos != i) {
+                        sf::Vector2f newEndPos(j * tileSize, currentPos * tileSize);
                         grid[currentPos][j] = grid[i][j];
                         grid[i][j] = 0;
                         moved = true;
+                        if (startPos != endPos) {
+                            animations.push_back(Animation(startPos, endPos, 0.2f));
+                        }
                     }
                 }
             }
@@ -169,7 +238,16 @@ void GameSFML::play() {
         window.window->clear();
         window.renderTiles(grid);
         window.renderScore(score);
-        window.window->display();
+
+        for (auto it = animations.begin(); it != animations.end();) {
+            if (it->update(1.0f / 60.0f)) {
+                it = animations.erase(it);
+            } else {
+                ++it;
+            }    
+    }
+    window.renderAnimations(animations);
+    window.window->display();
     }
 
     bool isKeyPressed = false;
