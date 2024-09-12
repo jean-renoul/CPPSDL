@@ -2,6 +2,7 @@
 #include <iostream>
 #include <filesystem>
 
+// Sets up the font of the window and reads the high score from the file in the constructor
 Window::Window() {
     window = new sf::RenderWindow{ { 1920u, 1080u }, "CMake SFML Project" };
     window->setFramerateLimit(144);
@@ -25,6 +26,7 @@ void Window::setFont(sf::Font font) {
     this->font = font;    
 }
 
+// Renders the tiles on the window by creating a tile object for each value in the grid (passed as a parameter) and drawing it
 void Window::renderTiles(std::vector<std::vector<int>> grid) {
     for (int i = 0; i < grid.size(); i++) {
         for (int j = 0; j < grid[i].size(); j++) {
@@ -36,6 +38,7 @@ void Window::renderTiles(std::vector<std::vector<int>> grid) {
     }
 }
 
+// Draws a tile on the window
 void Window::drawTile(Tile* tile) {
     sf::RectangleShape rectangle(sf::Vector2f(tile->getWidth(), tile->getHeight()));
     sf::Text textValue;
@@ -52,6 +55,7 @@ void Window::drawTile(Tile* tile) {
     window->draw(textValue);
 }
 
+// Renders the score and high score on the window
 void Window::renderScore(int currentScore) {
     sf::Text text;
     text.setFont(font);
@@ -65,6 +69,7 @@ void Window::renderScore(int currentScore) {
     window->draw(text);
 }
 
+// Renders the game over screen with the current score and instructions to exit
 void Window::renderGameOver(int currentScore) {
     sf::Text text;
     text.setFont(font);
@@ -75,6 +80,7 @@ void Window::renderGameOver(int currentScore) {
     window->draw(text);
 }
 
+// Renders the animations on the window
 void Window::renderAnimations(std::vector<Animation> animations) {
     for (int i = 0; i < animations.size(); i++) {
         window->draw(animations[i].getTileShape());

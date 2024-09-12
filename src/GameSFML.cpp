@@ -4,6 +4,7 @@
 #include <ctime>
 #include "GameSFML.hpp"
 
+// Initialize the grid with two tiles in the constructor
 GameSFML::GameSFML() : Game() {
     grid = std::vector<std::vector<int>>(4, std::vector<int>(4, 0));
     srand(static_cast<unsigned int>(time(0)));
@@ -12,6 +13,7 @@ GameSFML::GameSFML() : Game() {
     this->score = 0;
 }
 
+// Move the tiles to the left
 bool GameSFML::moveLeft() {
     bool moved = false;
     int tileSize = 200;
@@ -23,14 +25,17 @@ bool GameSFML::moveLeft() {
                 sf::Vector2f startPos(j * tileSize, i * tileSize);
                 sf::Vector2f endPos(currentPos * tileSize, i * tileSize);
 
+                // If the current position is empty, move the tile to the left
                 if (grid[i][currentPos] == 0) {
                     grid[i][currentPos] = grid[i][j];
                     grid[i][j] = 0;
                     moved = true;
+                    // Add the animation to the list of animations if the tile moved
                     if (startPos != endPos) {
                         animations.push_back(Animation(startPos, endPos, 0.2f));
                     }
 
+                // If the current position is the same as the tile, merge the tiles
                 } else if (grid[i][currentPos] == grid[i][j]) {
                     grid[i][currentPos] *= 2;
                     score += grid[i][currentPos];
@@ -41,6 +46,7 @@ bool GameSFML::moveLeft() {
                         animations.push_back(Animation(startPos, endPos, 0.2f));
                     }
 
+                // If the current position is not empty and not the same as the tile, move the tile to the left
                 } else {
                     currentPos++;
                     if (currentPos != j) {
@@ -59,9 +65,10 @@ bool GameSFML::moveLeft() {
     return moved;
 }
 
+// Move the tiles to the right, same logic as moveLeft but in reverse
 bool GameSFML::moveRight() {
     bool moved = false;
-    int tileSize = 200; // Assuming each tile is 200x200 pixels
+    int tileSize = 200;
 
     for (int i = 0; i < 4; ++i) {
         int currentPos = 3;
@@ -108,7 +115,7 @@ bool GameSFML::moveRight() {
 
 bool GameSFML::moveUp() {
     bool moved = false;
-    int tileSize = 200; // Assuming each tile is 200x200 pixels
+    int tileSize = 200;
 
     for (int j = 0; j < 4; ++j) {
         int currentPos = 0;
@@ -156,7 +163,7 @@ bool GameSFML::moveUp() {
 
 bool GameSFML::moveDown() {
     bool moved = false;
-    int tileSize = 200; // Assuming each tile is 200x200 pixels
+    int tileSize = 200;
 
     for (int j = 0; j < 4; ++j) {
         int currentPos = 3;
@@ -201,10 +208,12 @@ bool GameSFML::moveDown() {
     return moved;
 }
 
+// Game loop
 void GameSFML::play() {
     Window window;
     window.window->setFramerateLimit(60);
     
+    // Event loop
     while (window.window->isOpen() && canMove()) {
         sf::Event event;
         while (window.window->pollEvent(event)) {
@@ -235,6 +244,7 @@ void GameSFML::play() {
             }
         }
         
+        // We start by rendering the tiles and the score then we render the animations
         window.window->clear();
         window.renderTiles(grid);
         window.renderScore(score);
@@ -250,6 +260,7 @@ void GameSFML::play() {
     window.window->display();
     }
 
+    // Game over screen
     bool isKeyPressed = false;
 
     while (window.window->isOpen() && !isKeyPressed) {
@@ -267,6 +278,7 @@ void GameSFML::play() {
         window.renderGameOver(score);
         window.window->display();
     }
+    // Write the score to a file and close the window
     Score::writeScore(score, "Score.txt");
     window.window->close();
 

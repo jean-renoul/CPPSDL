@@ -4,6 +4,7 @@
 #include <ctime>
 #include "Game.h"
 
+// Initialize the grid with two tiles in the constructor
 Game::Game() {
     grid = std::vector<std::vector<int>>(4, std::vector<int>(4, 0));
     srand(static_cast<unsigned int>(time(0)));
@@ -12,6 +13,7 @@ Game::Game() {
     this->score = 0;
 }
 
+// Spawn a new tile with a value of 2 or 4
 void Game::spawnTile() {
     std::vector<std::pair<int, int>> emptyTiles;
     
@@ -30,6 +32,7 @@ void Game::spawnTile() {
     }
 }
 
+// Print the grid to the console
 void Game::printGrid() {
     for (int i = 0; i < 4; ++i) {
         for (int j = 0; j < 4; ++j) {
@@ -39,22 +42,29 @@ void Game::printGrid() {
     }
 }
 
+// Move the tiles to the left
 bool Game::moveLeft() {
     bool moved = false;
     for (int i = 0; i < 4; ++i) {
         int currentPos = 0;
         for (int j = 1; j < 4; ++j) {
             if (grid[i][j] != 0) {
+
+                // If the current position is empty, move the tile to the left
                 if (grid[i][currentPos] == 0) {
                     grid[i][currentPos] = grid[i][j];
                     grid[i][j] = 0;
                     moved = true;
+
+                // If the current position is the same as the tile, merge the tiles
                 } else if (grid[i][currentPos] == grid[i][j]) {
                     grid[i][currentPos] *= 2;
                     score += grid[i][currentPos];
                     grid[i][j] = 0;
                     currentPos++;
                     moved = true;
+                
+                // If the current position is not empty and not the same as the tile, move the tile to the left
                 } else {
                     currentPos++;
                     if (currentPos != j) {
@@ -159,6 +169,7 @@ bool Game::moveDown() {
     return moved;
 }
 
+// Check if the game is over
 bool Game::canMove() {
     for (int i = 0; i < 4; ++i) {
         for (int j = 0; j < 4; ++j) {
@@ -170,6 +181,7 @@ bool Game::canMove() {
     return false;
 }
 
+// Main game loop
 void Game::play() {
     char move;
     bool moved;
