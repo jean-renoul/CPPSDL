@@ -5,7 +5,6 @@
 
 int Score::readScore(std::string filename) {
     int highScore = 0;
-    // Check if the file exists
     if (!std::filesystem::exists(filename)) {
         std::ofstream file(filename);
     }
@@ -15,7 +14,6 @@ int Score::readScore(std::string filename) {
         std::cerr << "Error opening file" << std::endl;
         return 0;
     }
-    // Check the file is not empty
     if (file.peek() == std::ifstream::traits_type::eof()) {
         file.close();
         return 0;
