@@ -103,7 +103,9 @@ CMakeFiles/main.dir/main.cpp.obj: C:/Users/Jean/CPPSDL/main.cpp \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_iterator_base_types.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_map.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_multimap.h \
+  C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_multiset.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_pair.h \
+  C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_set.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_tempbuf.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_tree.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_uninitialized.h \
@@ -165,6 +167,7 @@ CMakeFiles/main.dir/main.cpp.obj: C:/Users/Jean/CPPSDL/main.cpp \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/pstl/execution_defs.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/pstl/glue_algorithm_defs.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/pstl/pstl_config.h \
+  C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/set \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/stdexcept \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/stdlib.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/streambuf \
@@ -180,6 +183,23 @@ CMakeFiles/main.dir/main.cpp.obj: C:/Users/Jean/CPPSDL/main.cpp \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/lib/gcc/i686-w64-mingw32/13.1.0/include/stddef.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/lib/gcc/i686-w64-mingw32/13.1.0/include/stdint.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/lib/gcc/i686-w64-mingw32/13.1.0/include/syslimits.h \
+  _deps/sfml-src/include/SFML/Audio.hpp \
+  _deps/sfml-src/include/SFML/Audio/AlResource.hpp \
+  _deps/sfml-src/include/SFML/Audio/Export.hpp \
+  _deps/sfml-src/include/SFML/Audio/InputSoundFile.hpp \
+  _deps/sfml-src/include/SFML/Audio/Listener.hpp \
+  _deps/sfml-src/include/SFML/Audio/Music.hpp \
+  _deps/sfml-src/include/SFML/Audio/OutputSoundFile.hpp \
+  _deps/sfml-src/include/SFML/Audio/Sound.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundBuffer.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundBufferRecorder.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundFileFactory.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundFileFactory.inl \
+  _deps/sfml-src/include/SFML/Audio/SoundFileReader.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundFileWriter.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundRecorder.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundSource.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundStream.hpp \
   _deps/sfml-src/include/SFML/Config.hpp \
   _deps/sfml-src/include/SFML/Graphics.hpp \
   _deps/sfml-src/include/SFML/Graphics/BlendMode.hpp \
@@ -616,7 +636,9 @@ CMakeFiles/main.dir/src/Game.cpp.obj: C:/Users/Jean/CPPSDL/src/Game.cpp \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_iterator_base_types.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_map.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_multimap.h \
+  C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_multiset.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_pair.h \
+  C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_set.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_tempbuf.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_tree.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_uninitialized.h \
@@ -678,6 +700,7 @@ CMakeFiles/main.dir/src/Game.cpp.obj: C:/Users/Jean/CPPSDL/src/Game.cpp \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/pstl/execution_defs.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/pstl/glue_algorithm_defs.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/pstl/pstl_config.h \
+  C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/set \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/stdexcept \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/stdlib.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/streambuf \
@@ -693,6 +716,23 @@ CMakeFiles/main.dir/src/Game.cpp.obj: C:/Users/Jean/CPPSDL/src/Game.cpp \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/lib/gcc/i686-w64-mingw32/13.1.0/include/stddef.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/lib/gcc/i686-w64-mingw32/13.1.0/include/stdint.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/lib/gcc/i686-w64-mingw32/13.1.0/include/syslimits.h \
+  _deps/sfml-src/include/SFML/Audio.hpp \
+  _deps/sfml-src/include/SFML/Audio/AlResource.hpp \
+  _deps/sfml-src/include/SFML/Audio/Export.hpp \
+  _deps/sfml-src/include/SFML/Audio/InputSoundFile.hpp \
+  _deps/sfml-src/include/SFML/Audio/Listener.hpp \
+  _deps/sfml-src/include/SFML/Audio/Music.hpp \
+  _deps/sfml-src/include/SFML/Audio/OutputSoundFile.hpp \
+  _deps/sfml-src/include/SFML/Audio/Sound.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundBuffer.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundBufferRecorder.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundFileFactory.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundFileFactory.inl \
+  _deps/sfml-src/include/SFML/Audio/SoundFileReader.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundFileWriter.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundRecorder.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundSource.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundStream.hpp \
   _deps/sfml-src/include/SFML/Config.hpp \
   _deps/sfml-src/include/SFML/Graphics.hpp \
   _deps/sfml-src/include/SFML/Graphics/BlendMode.hpp \
@@ -1128,7 +1168,9 @@ CMakeFiles/main.dir/src/GameSFML.cpp.obj: C:/Users/Jean/CPPSDL/src/GameSFML.cpp 
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_iterator_base_types.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_map.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_multimap.h \
+  C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_multiset.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_pair.h \
+  C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_set.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_tempbuf.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_tree.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_uninitialized.h \
@@ -1190,6 +1232,7 @@ CMakeFiles/main.dir/src/GameSFML.cpp.obj: C:/Users/Jean/CPPSDL/src/GameSFML.cpp 
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/pstl/execution_defs.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/pstl/glue_algorithm_defs.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/pstl/pstl_config.h \
+  C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/set \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/stdexcept \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/stdlib.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/streambuf \
@@ -1205,6 +1248,23 @@ CMakeFiles/main.dir/src/GameSFML.cpp.obj: C:/Users/Jean/CPPSDL/src/GameSFML.cpp 
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/lib/gcc/i686-w64-mingw32/13.1.0/include/stddef.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/lib/gcc/i686-w64-mingw32/13.1.0/include/stdint.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/lib/gcc/i686-w64-mingw32/13.1.0/include/syslimits.h \
+  _deps/sfml-src/include/SFML/Audio.hpp \
+  _deps/sfml-src/include/SFML/Audio/AlResource.hpp \
+  _deps/sfml-src/include/SFML/Audio/Export.hpp \
+  _deps/sfml-src/include/SFML/Audio/InputSoundFile.hpp \
+  _deps/sfml-src/include/SFML/Audio/Listener.hpp \
+  _deps/sfml-src/include/SFML/Audio/Music.hpp \
+  _deps/sfml-src/include/SFML/Audio/OutputSoundFile.hpp \
+  _deps/sfml-src/include/SFML/Audio/Sound.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundBuffer.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundBufferRecorder.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundFileFactory.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundFileFactory.inl \
+  _deps/sfml-src/include/SFML/Audio/SoundFileReader.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundFileWriter.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundRecorder.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundSource.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundStream.hpp \
   _deps/sfml-src/include/SFML/Config.hpp \
   _deps/sfml-src/include/SFML/Graphics.hpp \
   _deps/sfml-src/include/SFML/Graphics/BlendMode.hpp \
@@ -1837,7 +1897,9 @@ CMakeFiles/main.dir/src/Window.cpp.obj: C:/Users/Jean/CPPSDL/src/Window.cpp \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_iterator_base_types.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_map.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_multimap.h \
+  C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_multiset.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_pair.h \
+  C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_set.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_tempbuf.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_tree.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_uninitialized.h \
@@ -1907,6 +1969,7 @@ CMakeFiles/main.dir/src/Window.cpp.obj: C:/Users/Jean/CPPSDL/src/Window.cpp \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/pstl/glue_algorithm_defs.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/pstl/pstl_config.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/ratio \
+  C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/set \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/sstream \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/stdexcept \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/stdlib.h \
@@ -1923,6 +1986,23 @@ CMakeFiles/main.dir/src/Window.cpp.obj: C:/Users/Jean/CPPSDL/src/Window.cpp \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/lib/gcc/i686-w64-mingw32/13.1.0/include/stddef.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/lib/gcc/i686-w64-mingw32/13.1.0/include/stdint.h \
   C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/lib/gcc/i686-w64-mingw32/13.1.0/include/syslimits.h \
+  _deps/sfml-src/include/SFML/Audio.hpp \
+  _deps/sfml-src/include/SFML/Audio/AlResource.hpp \
+  _deps/sfml-src/include/SFML/Audio/Export.hpp \
+  _deps/sfml-src/include/SFML/Audio/InputSoundFile.hpp \
+  _deps/sfml-src/include/SFML/Audio/Listener.hpp \
+  _deps/sfml-src/include/SFML/Audio/Music.hpp \
+  _deps/sfml-src/include/SFML/Audio/OutputSoundFile.hpp \
+  _deps/sfml-src/include/SFML/Audio/Sound.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundBuffer.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundBufferRecorder.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundFileFactory.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundFileFactory.inl \
+  _deps/sfml-src/include/SFML/Audio/SoundFileReader.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundFileWriter.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundRecorder.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundSource.hpp \
+  _deps/sfml-src/include/SFML/Audio/SoundStream.hpp \
   _deps/sfml-src/include/SFML/Config.hpp \
   _deps/sfml-src/include/SFML/Graphics.hpp \
   _deps/sfml-src/include/SFML/Graphics/BlendMode.hpp \
@@ -2026,6 +2106,8 @@ C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/i
 
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/i686-w64-mingw32/include/sec_api/stdlib_s.h:
 
+_deps/sfml-src/include/SFML/Audio/InputSoundFile.hpp:
+
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/hash_bytes.h:
 
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/i686-w64-mingw32/include/_mingw_secapi.h:
@@ -2101,6 +2183,8 @@ C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/i
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/i686-w64-mingw32/include/pthread_unistd.h:
 
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/i686-w64-mingw32/include/sdks/_mingw_ddk.h:
+
+_deps/sfml-src/include/SFML/Audio/SoundSource.hpp:
 
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/i686-w64-mingw32/bits/c++io.h:
 
@@ -2184,6 +2268,8 @@ C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/i
 
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/cpp_type_traits.h:
 
+_deps/sfml-src/include/SFML/Audio/SoundFileFactory.hpp:
+
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/cxxabi_init_exception.h:
 
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/erase_if.h:
@@ -2194,6 +2280,8 @@ C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/i
 
 _deps/sfml-src/include/SFML/Graphics/Export.hpp:
 
+_deps/sfml-src/include/SFML/Audio/SoundRecorder.hpp:
+
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/invoke.h:
 
 _deps/sfml-src/include/SFML/System/Vector2.hpp:
@@ -2201,6 +2289,8 @@ _deps/sfml-src/include/SFML/System/Vector2.hpp:
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/ios_base.h:
 
 _deps/sfml-src/include/SFML/Graphics/Shader.hpp:
+
+_deps/sfml-src/include/SFML/Audio/Export.hpp:
 
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/typeinfo:
 
@@ -2282,6 +2372,14 @@ C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/i
 
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_multimap.h:
 
+_deps/sfml-src/include/SFML/Graphics/CircleShape.hpp:
+
+C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_multiset.h:
+
+C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/ext/numeric_traits.h:
+
+C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_set.h:
+
 _deps/sfml-src/include/SFML/Window/Sensor.hpp:
 
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/stl_tempbuf.h:
@@ -2346,8 +2444,6 @@ C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/i
 
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/ext/atomicity.h:
 
-C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/ext/numeric_traits.h:
-
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/ext/string_conversions.h:
 
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/ext/type_traits.h:
@@ -2365,6 +2461,8 @@ C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/i
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/i686-w64-mingw32/bits/cpu_defines.h:
 
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/i686-w64-mingw32/bits/ctype_base.h:
+
+_deps/sfml-src/include/SFML/Audio/Listener.hpp:
 
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/i686-w64-mingw32/bits/ctype_inline.h:
 
@@ -2414,6 +2512,8 @@ _deps/sfml-src/include/SFML/Graphics/RenderTarget.hpp:
 
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/pstl/pstl_config.h:
 
+C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/set:
+
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/stdexcept:
 
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/stdlib.h:
@@ -2440,13 +2540,39 @@ C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/l
 
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/lib/gcc/i686-w64-mingw32/13.1.0/include/syslimits.h:
 
+C:/Users/Jean/CPPSDL/include/Animation.hpp:
+
+_deps/sfml-src/include/SFML/Audio.hpp:
+
+_deps/sfml-src/include/SFML/Audio/AlResource.hpp:
+
+_deps/sfml-src/include/SFML/Audio/Music.hpp:
+
+C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/codecvt:
+
+_deps/sfml-src/include/SFML/Audio/OutputSoundFile.hpp:
+
+_deps/sfml-src/include/SFML/Audio/Sound.hpp:
+
+_deps/sfml-src/include/SFML/Audio/SoundBuffer.hpp:
+
+C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/iomanip:
+
+_deps/sfml-src/include/SFML/Audio/SoundBufferRecorder.hpp:
+
+_deps/sfml-src/include/SFML/Audio/SoundFileFactory.inl:
+
+_deps/sfml-src/include/SFML/Audio/SoundFileReader.hpp:
+
+_deps/sfml-src/include/SFML/Audio/SoundFileWriter.hpp:
+
+_deps/sfml-src/include/SFML/Audio/SoundStream.hpp:
+
 C:/Users/Jean/CPPSDL/src/GameObject.cpp:
 
 _deps/sfml-src/include/SFML/Config.hpp:
 
 _deps/sfml-src/include/SFML/Graphics.hpp:
-
-_deps/sfml-src/include/SFML/Graphics/CircleShape.hpp:
 
 _deps/sfml-src/include/SFML/Graphics/Color.hpp:
 
@@ -2548,8 +2674,6 @@ _deps/sfml-src/include/SFML/Window/WindowHandle.hpp:
 
 _deps/sfml-src/include/SFML/Window/WindowStyle.hpp:
 
-C:/Users/Jean/CPPSDL/include/Animation.hpp:
-
 C:/Users/Jean/CPPSDL/include/Game.h:
 
 C:/Users/Jean/CPPSDL/include/GameObject.hpp:
@@ -2578,13 +2702,9 @@ C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/i
 
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/bits/unique_ptr.h:
 
-C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/codecvt:
-
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/cstdint:
 
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/filesystem:
-
-C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/iomanip:
 
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/ratio:
 

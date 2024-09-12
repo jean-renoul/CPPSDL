@@ -333,14 +333,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "hello_test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-hello_test-Debug-f22f4111a575b23cb88b.json",
+					"jsonFile" : "target-hello_test-Debug-754ec6efb897e11f64d4.json",
 					"name" : "hello_test",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "main::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-main-Debug-b8e30f51d8934c7a2638.json",
+					"jsonFile" : "target-main-Debug-0992e473b0697f1e99e0.json",
 					"name" : "main",
 					"projectIndex" : 0
 				},

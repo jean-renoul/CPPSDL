@@ -5,6 +5,7 @@
 #include "Window.hpp"
 #include "Tile.h"
 #include "Game.h"
+#include "Animation.hpp"
 
 class GameSFML : public Game {
     private:

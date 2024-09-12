@@ -11,6 +11,7 @@ Game::Game() {
     spawnTile();
     spawnTile();
     this->score = 0;
+    this->score = 0;
 }
 
 // Spawn a new tile with a value of 2 or 4
@@ -60,6 +61,7 @@ bool Game::moveLeft() {
                 } else if (grid[i][currentPos] == grid[i][j]) {
                     grid[i][currentPos] *= 2;
                     score += grid[i][currentPos];
+                    score += grid[i][currentPos];
                     grid[i][j] = 0;
                     currentPos++;
                     moved = true;
@@ -92,6 +94,7 @@ bool Game::moveRight() {
                 } else if (grid[i][currentPos] == grid[i][j]) {
                     grid[i][currentPos] *= 2;
                     score += grid[i][currentPos];
+                    score += grid[i][currentPos];
                     grid[i][j] = 0;
                     currentPos--;
                     moved = true;
@@ -122,6 +125,7 @@ bool Game::moveUp() {
                 } else if (grid[currentPos][j] == grid[i][j]) {
                     grid[currentPos][j] *= 2;
                     score += grid[currentPos][j];
+                    score += grid[currentPos][j];
                     grid[i][j] = 0;
                     currentPos++;
                     moved = true;
@@ -151,6 +155,7 @@ bool Game::moveDown() {
                     moved = true;
                 } else if (grid[currentPos][j] == grid[i][j]) {
                     grid[currentPos][j] *= 2;
+                    score += grid[currentPos][j];
                     score += grid[currentPos][j];
                     grid[i][j] = 0;
                     currentPos--;
@@ -188,7 +193,7 @@ void Game::play() {
     
     while (canMove()) {
         printGrid();
-        std::cout << "Enter move (w: up, s: down, a: left, d: right): ";
+        std::cout << "Enter move (z: up, s: down, q: left, d: right): ";
         std::cin >> move;
         
         switch (move) {

@@ -212,9 +212,16 @@ bin/main.exe: CMakeFiles/main.dir/src/GameSFML.cpp.obj
 bin/main.exe: CMakeFiles/main.dir/src/Animation.cpp.obj
 bin/main.exe: CMakeFiles/main.dir/build.make
 bin/main.exe: _deps/sfml-build/lib/libsfml-graphics-s-d.a
+bin/main.exe: _deps/sfml-build/lib/libsfml-audio-s-d.a
 bin/main.exe: _deps/sfml-build/lib/libsfml-window-s-d.a
-bin/main.exe: _deps/sfml-build/lib/libsfml-system-s-d.a
 bin/main.exe: _deps/sfml-src/extlibs/libs-mingw/x86/libfreetype.a
+bin/main.exe: _deps/sfml-src/extlibs/libs-mingw/x86/libopenal32.a
+bin/main.exe: _deps/sfml-build/lib/libsfml-system-s-d.a
+bin/main.exe: _deps/sfml-src/extlibs/libs-mingw/x86/libvorbisenc.a
+bin/main.exe: _deps/sfml-src/extlibs/libs-mingw/x86/libvorbisfile.a
+bin/main.exe: _deps/sfml-src/extlibs/libs-mingw/x86/libvorbis.a
+bin/main.exe: _deps/sfml-src/extlibs/libs-mingw/x86/libogg.a
+bin/main.exe: _deps/sfml-src/extlibs/libs-mingw/x86/libFLAC.a
 bin/main.exe: CMakeFiles/main.dir/linkLibs.rsp
 bin/main.exe: CMakeFiles/main.dir/objects1.rsp
 bin/main.exe: CMakeFiles/main.dir/link.txt

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Site BuildName="(empty)"
-	BuildStamp="20240909-1301-Experimental"
+	BuildStamp="20240912-1435-Experimental"
 	Name="(empty)"
 	Generator="ctest-3.29.3"
 	CompilerName=""
@@ -18,17 +18,17 @@
 	ProcessorCacheSize="64"
 	NumberOfLogicalCPU="12"
 	NumberOfPhysicalCPU="6"
-	TotalVirtualMemory="22892"
+	TotalVirtualMemory="23404"
 	TotalPhysicalMemory="14188"
 	LogicalProcessorsPerPhysical="2"
 	ProcessorClockFrequency="1996"
 	>
 	<Testing>
-		<StartDateTime>Sep 09 15:01 Paris, Madrid (heure d[NON-UTF-8-BYTE-0x92][NON-UTF-8-BYTE-0xE9]t[NON-UTF-8-BYTE-0xE9])</StartDateTime>
-		<StartTestTime>1725886875</StartTestTime>
+		<StartDateTime>Sep 12 16:35 Paris, Madrid (heure d[NON-UTF-8-BYTE-0x92][NON-UTF-8-BYTE-0xE9]t[NON-UTF-8-BYTE-0xE9])</StartDateTime>
+		<StartTestTime>1726151711</StartTestTime>
 		<TestList/>
-		<EndDateTime>Sep 09 15:01 Paris, Madrid (heure d[NON-UTF-8-BYTE-0x92][NON-UTF-8-BYTE-0xE9]t[NON-UTF-8-BYTE-0xE9])</EndDateTime>
-		<EndTestTime>1725886875</EndTestTime>
+		<EndDateTime>Sep 12 16:35 Paris, Madrid (heure d[NON-UTF-8-BYTE-0x92][NON-UTF-8-BYTE-0xE9]t[NON-UTF-8-BYTE-0xE9])</EndDateTime>
+		<EndTestTime>1726151711</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

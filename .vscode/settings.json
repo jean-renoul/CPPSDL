@@ -1,9 +1,14 @@
 {
     "files.associations": {
+<<<<<<< HEAD
+=======
+        "any": "cpp",
+>>>>>>> Console
         "array": "cpp",
         "atomic": "cpp",
         "bit": "cpp",
         "*.tcc": "cpp",
+<<<<<<< HEAD
         "cctype": "cpp",
         "charconv": "cpp",
         "clocale": "cpp",
@@ -11,18 +16,43 @@
         "codecvt": "cpp",
         "compare": "cpp",
         "concepts": "cpp",
+=======
+        "bitset": "cpp",
+        "cctype": "cpp",
+        "charconv": "cpp",
+        "chrono": "cpp",
+        "clocale": "cpp",
+        "cmath": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "condition_variable": "cpp",
+>>>>>>> Console
         "cstdarg": "cpp",
         "cstddef": "cpp",
         "cstdint": "cpp",
         "cstdio": "cpp",
         "cstdlib": "cpp",
+<<<<<<< HEAD
+=======
+        "cstring": "cpp",
+>>>>>>> Console
         "ctime": "cpp",
         "cwchar": "cpp",
         "cwctype": "cpp",
         "deque": "cpp",
+<<<<<<< HEAD
         "map": "cpp",
         "string": "cpp",
         "unordered_map": "cpp",
+=======
+        "forward_list": "cpp",
+        "list": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+>>>>>>> Console
         "vector": "cpp",
         "exception": "cpp",
         "algorithm": "cpp",
@@ -47,6 +77,7 @@
         "iostream": "cpp",
         "istream": "cpp",
         "limits": "cpp",
+<<<<<<< HEAD
         "new": "cpp",
         "numbers": "cpp",
         "ostream": "cpp",
@@ -58,5 +89,21 @@
         "variant": "cpp",
         "text_encoding": "cpp",
         "set": "cpp"
+=======
+        "mutex": "cpp",
+        "new": "cpp",
+        "numbers": "cpp",
+        "ostream": "cpp",
+        "semaphore": "cpp",
+        "span": "cpp",
+        "sstream": "cpp",
+        "stdexcept": "cpp",
+        "stop_token": "cpp",
+        "streambuf": "cpp",
+        "thread": "cpp",
+        "cinttypes": "cpp",
+        "typeinfo": "cpp",
+        "variant": "cpp"
+>>>>>>> Console
     }
 }
