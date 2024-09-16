@@ -1,0 +1,1 @@
+-IC:/Users/Jean/CPPSDL/src -IC:/Users/Jean/CPPSDL/include -isystem "C:/Users/Jean/CPPSDL/build/_deps/googletest-src/googletest/include" -isystem "C:/Users/Jean/CPPSDL/build/_deps/googletest-src/googletest"

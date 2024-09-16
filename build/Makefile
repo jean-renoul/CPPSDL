@@ -204,17 +204,17 @@ main/fast:
 .PHONY : main/fast
 
 #=============================================================================
-# Target rules for targets named hello_test
+# Target rules for targets named test1
 
 # Build rule for target.
-hello_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 hello_test
-.PHONY : hello_test
+test1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test1
+.PHONY : test1
 
 # fast build rule for target.
-hello_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello_test.dir\build.make CMakeFiles/hello_test.dir/build
-.PHONY : hello_test/fast
+test1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test1.dir\build.make CMakeFiles/test1.dir/build
+.PHONY : test1/fast
 
 #=============================================================================
 # Target rules for targets named sfml-system
@@ -346,30 +346,6 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-hello_test.obj: hello_test.cc.obj
-.PHONY : hello_test.obj
-
-# target to build an object file
-hello_test.cc.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello_test.dir\build.make CMakeFiles/hello_test.dir/hello_test.cc.obj
-.PHONY : hello_test.cc.obj
-
-hello_test.i: hello_test.cc.i
-.PHONY : hello_test.i
-
-# target to preprocess a source file
-hello_test.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello_test.dir\build.make CMakeFiles/hello_test.dir/hello_test.cc.i
-.PHONY : hello_test.cc.i
-
-hello_test.s: hello_test.cc.s
-.PHONY : hello_test.s
-
-# target to generate assembly for a file
-hello_test.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello_test.dir\build.make CMakeFiles/hello_test.dir/hello_test.cc.s
-.PHONY : hello_test.cc.s
-
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -496,6 +472,7 @@ src/Score.obj: src/Score.cpp.obj
 # target to build an object file
 src/Score.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Score.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test1.dir\build.make CMakeFiles/test1.dir/src/Score.cpp.obj
 .PHONY : src/Score.cpp.obj
 
 src/Score.i: src/Score.cpp.i
@@ -504,6 +481,7 @@ src/Score.i: src/Score.cpp.i
 # target to preprocess a source file
 src/Score.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Score.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test1.dir\build.make CMakeFiles/test1.dir/src/Score.cpp.i
 .PHONY : src/Score.cpp.i
 
 src/Score.s: src/Score.cpp.s
@@ -512,6 +490,7 @@ src/Score.s: src/Score.cpp.s
 # target to generate assembly for a file
 src/Score.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Score.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test1.dir\build.make CMakeFiles/test1.dir/src/Score.cpp.s
 .PHONY : src/Score.cpp.s
 
 src/Tile.obj: src/Tile.cpp.obj
@@ -562,6 +541,30 @@ src/Window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Window.cpp.s
 .PHONY : src/Window.cpp.s
 
+test.obj: test.cc.obj
+.PHONY : test.obj
+
+# target to build an object file
+test.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test1.dir\build.make CMakeFiles/test1.dir/test.cc.obj
+.PHONY : test.cc.obj
+
+test.i: test.cc.i
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test1.dir\build.make CMakeFiles/test1.dir/test.cc.i
+.PHONY : test.cc.i
+
+test.s: test.cc.s
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test1.dir\build.make CMakeFiles/test1.dir/test.cc.s
+.PHONY : test.cc.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -581,7 +584,6 @@ help:
 	@echo ... gmock_main
 	@echo ... gtest
 	@echo ... gtest_main
-	@echo ... hello_test
 	@echo ... main
 	@echo ... sfml-audio
 	@echo ... sfml-graphics
@@ -589,9 +591,7 @@ help:
 	@echo ... sfml-network
 	@echo ... sfml-system
 	@echo ... sfml-window
-	@echo ... hello_test.obj
-	@echo ... hello_test.i
-	@echo ... hello_test.s
+	@echo ... test1
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
@@ -616,6 +616,9 @@ help:
 	@echo ... src/Window.obj
 	@echo ... src/Window.i
 	@echo ... src/Window.s
+	@echo ... test.obj
+	@echo ... test.i
+	@echo ... test.s
 .PHONY : help
 
 

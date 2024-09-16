@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20240916-0700-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.29.3"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Windows"
+	Hostname="DESKTOP-UA6MHED"
+	OSRelease=" Professional"
+	OSVersion=" (Build 22631)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="15"
+	ModelID="0"
+	ProcessorCacheSize="64"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="25229"
+	TotalPhysicalMemory="14188"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="1996"
+	>
+	<Testing>
+		<StartDateTime>Sep 16 10:18 Paris, Madrid (heure d[NON-UTF-8-BYTE-0x92][NON-UTF-8-BYTE-0xE9]t[NON-UTF-8-BYTE-0xE9])</StartDateTime>
+		<StartTestTime>1726474706</StartTestTime>
+		<TestList>
+			<Test>./ScoreTest.WriteScore</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>ScoreTest.WriteScore</Name>
+			<Path>.</Path>
+			<FullName>./ScoreTest.WriteScore</FullName>
+			<FullCommandLine>C:\Users\Jean\CPPSDL\build\bin\test1.exe "--gtest_filter=ScoreTest.WriteScore" "--gtest_also_run_disabled_tests"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0850553</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>C:\Users\Jean\CPPSDL\build\bin\test1.exe "--gtest_filter=ScoreTest.WriteScore" "--gtest_also_run_disabled_tests"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyNUE1rwzAMvftX6NgcYtiOhR5KOwrbaEOyskMcipuoweDIxXa2v7/YKaEdBPpO+niS3lPeEylqoZOKFglcrOlgsxRHh9aJd5QkNllWbD/FuVe6EacGr060xrQaPTqfOlvfpSKmITqFhbyu2d54XMIuUuBr6MBFaY8WVlDUxmIo8W+rPMaUlasJFeQ3dS/g42RQd4tdP4xwVqYTKthpc5Z67CP9KGuoQxq46NP++o98v3NSwkrIj3uIqGYEjl04fMwwYPEKnUueuDYywRsvdcKe8+JR2rQxv/T4qbkPgZXEH+8MBrJ1Ubxtg8WRy9kfrmqncw==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Sep 16 10:18 Paris, Madrid (heure d[NON-UTF-8-BYTE-0x92][NON-UTF-8-BYTE-0xE9]t[NON-UTF-8-BYTE-0xE9])</EndDateTime>
+		<EndTestTime>1726474706</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

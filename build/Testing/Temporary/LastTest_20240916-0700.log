@@ -1,0 +1,30 @@
+Start testing: Sep 16 10:18 Paris, Madrid (heure d’été)
+----------------------------------------------------------
+2/2 Testing: ScoreTest.WriteScore
+2/2 Test: ScoreTest.WriteScore
+Command: "C:/Users/Jean/CPPSDL/build/bin/test1.exe" "--gtest_filter=ScoreTest.WriteScore" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Jean/CPPSDL/build
+"ScoreTest.WriteScore" start time: Sep 16 10:18 Paris, Madrid (heure d’été)
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Jean\CPPSDL\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = ScoreTest.WriteScore
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ScoreTest
+[ RUN      ] ScoreTest.WriteScore
+[       OK ] ScoreTest.WriteScore (2 ms)
+[----------] 1 test from ScoreTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"ScoreTest.WriteScore" end time: Sep 16 10:18 Paris, Madrid (heure d’été)
+"ScoreTest.WriteScore" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 16 10:18 Paris, Madrid (heure d’été)

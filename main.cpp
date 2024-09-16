@@ -106,7 +106,7 @@ int main() {
                     }
 
                     if (mousePos.x >= 200 && mousePos.x <= 600 && mousePos.y >= 350 && mousePos.y <= 380) {
-                        std::cout << "Merci d'avoir joué !" << std::endl;
+                        std::cout << "Merci d'avoir joue !" << std::endl;
                         running = false;
                         window.close();
                     }

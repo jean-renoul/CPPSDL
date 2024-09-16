@@ -1,0 +1,5 @@
+add_test([=[ScoreTest.ReadScore]=]  C:/Users/Jean/CPPSDL/build/bin/test1.exe [==[--gtest_filter=ScoreTest.ReadScore]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[ScoreTest.ReadScore]=]  PROPERTIES WORKING_DIRECTORY C:/Users/Jean/CPPSDL/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[ScoreTest.WriteScore]=]  C:/Users/Jean/CPPSDL/build/bin/test1.exe [==[--gtest_filter=ScoreTest.WriteScore]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[ScoreTest.WriteScore]=]  PROPERTIES WORKING_DIRECTORY C:/Users/Jean/CPPSDL/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  test1_TESTS ScoreTest.ReadScore ScoreTest.WriteScore)

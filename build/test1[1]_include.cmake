@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/Jean/CPPSDL/build/test1[1]_tests.cmake")
+  include("C:/Users/Jean/CPPSDL/build/test1[1]_tests.cmake")
+else()
+  add_test(test1_NOT_BUILT test1_NOT_BUILT)
+endif()
