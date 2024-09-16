@@ -30,7 +30,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>  // Ajout de l'inclusion pour la gestion de l'audio
-#include "Tile.h"
+#include "Tile.hpp"
 #include "Score.hpp"
 #include "Animation.hpp"
 

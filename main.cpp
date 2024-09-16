@@ -1,7 +1,7 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 #include <iostream>
-#include "Game.h"
+#include "Game.hpp"
 #include "GameSFML.hpp"
 
 void showMenu(sf::RenderWindow &window) {

@@ -3,8 +3,8 @@
 
 #include <vector>
 #include "Window.hpp"
-#include "Tile.h"
-#include "Game.h"
+#include "Tile.hpp"
+#include "Game.hpp"
 #include "Animation.hpp"
 
 class GameSFML : public Game {

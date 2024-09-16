@@ -2,7 +2,7 @@
 #include <vector>
 #include <cstdlib>
 #include <ctime>
-#include "Game.h"
+#include "Game.hpp"
 
 // Initialize the grid with two tiles in the constructor
 Game::Game() {

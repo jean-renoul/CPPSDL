@@ -1342,11 +1342,11 @@ CMakeFiles/main.dir/src/GameSFML.cpp.obj: C:/Users/Jean/CPPSDL/src/GameSFML.cpp 
   _deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
   _deps/sfml-src/include/SFML/Window/WindowStyle.hpp \
   C:/Users/Jean/CPPSDL/include/Animation.hpp \
-  C:/Users/Jean/CPPSDL/include/Game.h \
+  C:/Users/Jean/CPPSDL/include/Game.hpp \
   C:/Users/Jean/CPPSDL/include/GameObject.hpp \
   C:/Users/Jean/CPPSDL/include/GameSFML.hpp \
   C:/Users/Jean/CPPSDL/include/Score.hpp \
-  C:/Users/Jean/CPPSDL/include/Tile.h \
+  C:/Users/Jean/CPPSDL/include/Tile.hpp \
   C:/Users/Jean/CPPSDL/include/Window.hpp
 
 CMakeFiles/main.dir/src/Score.cpp.obj: C:/Users/Jean/CPPSDL/src/Score.cpp \
@@ -2082,7 +2082,7 @@ CMakeFiles/main.dir/src/Window.cpp.obj: C:/Users/Jean/CPPSDL/src/Window.cpp \
   C:/Users/Jean/CPPSDL/include/Animation.hpp \
   C:/Users/Jean/CPPSDL/include/GameObject.hpp \
   C:/Users/Jean/CPPSDL/include/Score.hpp \
-  C:/Users/Jean/CPPSDL/include/Tile.h \
+  C:/Users/Jean/CPPSDL/include/Tile.hpp \
   C:/Users/Jean/CPPSDL/include/Window.hpp
 
 
@@ -2434,6 +2434,8 @@ C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/i
 
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/debug/debug.h:
 
+C:/Users/Jean/CPPSDL/include/Tile.hpp:
+
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/exception:
 
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/ext/aligned_buffer.h:
@@ -2465,6 +2467,8 @@ C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/i
 _deps/sfml-src/include/SFML/Audio/Listener.hpp:
 
 C:/MinGW/winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5/mingw32/include/c++/13.1.0/i686-w64-mingw32/bits/ctype_inline.h:
+
+C:/Users/Jean/CPPSDL/include/Game.hpp:
 
 _deps/sfml-src/include/SFML/System/Vector3.hpp:
 

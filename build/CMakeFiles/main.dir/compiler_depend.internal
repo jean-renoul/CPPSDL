@@ -1347,11 +1347,11 @@ CMakeFiles/main.dir/src/GameSFML.cpp.obj
  C:/Users/Jean/CPPSDL/build/_deps/sfml-src/include/SFML/Window/WindowHandle.hpp
  C:/Users/Jean/CPPSDL/build/_deps/sfml-src/include/SFML/Window/WindowStyle.hpp
  C:/Users/Jean/CPPSDL/include/Animation.hpp
- C:/Users/Jean/CPPSDL/include/Game.h
+ C:/Users/Jean/CPPSDL/include/Game.hpp
  C:/Users/Jean/CPPSDL/include/GameObject.hpp
  C:/Users/Jean/CPPSDL/include/GameSFML.hpp
  C:/Users/Jean/CPPSDL/include/Score.hpp
- C:/Users/Jean/CPPSDL/include/Tile.h
+ C:/Users/Jean/CPPSDL/include/Tile.hpp
  C:/Users/Jean/CPPSDL/include/Window.hpp
 
 CMakeFiles/main.dir/src/Score.cpp.obj
@@ -2090,6 +2090,6 @@ CMakeFiles/main.dir/src/Window.cpp.obj
  C:/Users/Jean/CPPSDL/include/Animation.hpp
  C:/Users/Jean/CPPSDL/include/GameObject.hpp
  C:/Users/Jean/CPPSDL/include/Score.hpp
- C:/Users/Jean/CPPSDL/include/Tile.h
+ C:/Users/Jean/CPPSDL/include/Tile.hpp
  C:/Users/Jean/CPPSDL/include/Window.hpp
 

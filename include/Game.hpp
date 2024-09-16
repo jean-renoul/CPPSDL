@@ -1,11 +1,10 @@
-#ifndef GAME_H
-#define GAME_H
+#ifndef GAME_HPP
+#define GAME_HPP
 
 #include <vector>
 #include "Window.hpp"
-#include "Tile.h"
+#include "Tile.hpp"
 #include "Window.hpp"
-#include "Tile.h"
 
 class Game {
 protected:

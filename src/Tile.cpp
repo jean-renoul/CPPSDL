@@ -1,4 +1,4 @@
-#include "Tile.h"
+#include "Tile.hpp"
 
 Tile::Tile(int val) : value(val) {
     calculateColor();
