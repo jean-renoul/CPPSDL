@@ -10,6 +10,14 @@ Window::Window() {
         std::cerr << "Error loading font" << std::endl;
     }
     setFont(font);
+
+    if (!backgroundMusic.openFromFile("../assets/byte-blast-8-bit-arcade-music-background-music-for-video-33-second-208777.mp3")) {
+        std::cerr << "Error loading music" << std::endl;
+    } else {
+        backgroundMusic.setLoop(true);  // Loops the music
+        backgroundMusic.play();         // Plays the music
+    }
+
     int highScore = Score::readScore("Score.txt");
     this->highScore = highScore;
 }
