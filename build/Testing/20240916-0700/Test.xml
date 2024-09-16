@@ -24,8 +24,8 @@
 	ProcessorClockFrequency="1996"
 	>
 	<Testing>
-		<StartDateTime>Sep 16 10:18 Paris, Madrid (heure d[NON-UTF-8-BYTE-0x92][NON-UTF-8-BYTE-0xE9]t[NON-UTF-8-BYTE-0xE9])</StartDateTime>
-		<StartTestTime>1726474706</StartTestTime>
+		<StartDateTime>Sep 16 10:38 Paris, Madrid (heure d[NON-UTF-8-BYTE-0x92][NON-UTF-8-BYTE-0xE9]t[NON-UTF-8-BYTE-0xE9])</StartDateTime>
+		<StartTestTime>1726475883</StartTestTime>
 		<TestList>
 			<Test>./ScoreTest.WriteScore</Test>
 		</TestList>
@@ -36,7 +36,7 @@
 			<FullCommandLine>C:\Users\Jean\CPPSDL\build\bin\test1.exe "--gtest_filter=ScoreTest.WriteScore" "--gtest_also_run_disabled_tests"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0850553</Value>
+					<Value>0.0394685</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -55,8 +55,8 @@
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>Sep 16 10:18 Paris, Madrid (heure d[NON-UTF-8-BYTE-0x92][NON-UTF-8-BYTE-0xE9]t[NON-UTF-8-BYTE-0xE9])</EndDateTime>
-		<EndTestTime>1726474706</EndTestTime>
+		<EndDateTime>Sep 16 10:38 Paris, Madrid (heure d[NON-UTF-8-BYTE-0x92][NON-UTF-8-BYTE-0xE9]t[NON-UTF-8-BYTE-0xE9])</EndDateTime>
+		<EndTestTime>1726475883</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
